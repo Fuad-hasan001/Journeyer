@@ -73,7 +73,6 @@ nav {
 
 /* ---------Banner Section--------- */
 .banner-container {
-    /* border: 1px solid green; */
     height: 70vh;
     background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
@@ -117,8 +116,6 @@ nav {
 
     position: relative;
     bottom: 50%;
-
-    
 }
 
 .schedule form {
@@ -145,11 +142,12 @@ nav {
 
 }
 
+
+
 /* ---------Main Section------ */
-main {
-    /* margin: 0 5vw; */
-    background-color: #FFF;
-}
+/* main {
+    
+} */
 
 .popularTour-container {
     margin-top: 10vh;
@@ -189,7 +187,6 @@ main {
 }
 
 .destination-content{
-    border: 1px solid red;
     width: 40vw;
     margin: 0 auto;
     text-align: center;
@@ -256,15 +253,15 @@ main {
 }
 
 
+
+
 /* ----------Deal and Discounts --------------*/
 .discounts-container {
-    border: 1px solid goldenrod;
     height: auto;
 }
 
 .discounts-package-info img{
     width: 100%;
-    /* position: relative; */
 }
 
 article{
@@ -272,9 +269,8 @@ article{
 }
 
 .discount-info{
-    border: 1px solid red;
     width: 40vw;
-    height: 40vh; /*40vh*/
+    height: 40vh;
 
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.80);
@@ -316,14 +312,11 @@ article{
 
 /* -------A simple perfect place----- */
 .watchPlace-container {
-    /* background-color: blueviolet; */
-    /* margin: 10vh 0; */
     height: auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 5vw; */
 }
 
 .watchPlace-content{
@@ -426,29 +419,30 @@ footer {
 }
 
 
-/* ---------------
-----------------
--------Media Query---------- */
+
+
+
+
+/* ---------------------------------
+-----------------------
+-------@Media Query---------- 
+------------------------
+--------------------------------------*/
 
 /* Responsive Design for tablet */
 @media screen and (min-width: 601px) and (max-width:992px) {
     body {
-        background-color: blue;
+        /* In Future */
     }
-
-
-
 }
 
 /* ----------Responsive Design for Mobile */
 @media screen and (max-width: 600px) {
     body {
-        /* background-color: red; */
+    
     }
 
     .banner{
-        /* margin: 0;
-        padding: 0; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -599,7 +593,6 @@ footer {
 
 /* ---------Why Choose us--------- */
 .chooseUs-container {
-    border: 1px solid goldenrod;
     width: 48%;
     height: auto;
     margin: 10vh 0;
@@ -660,9 +653,8 @@ article{
 }
 
 .discount-info{
-    border: 1px solid red;
     width: 70%;
-    height: auto; /*40vh*/
+    height: auto;
 
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.80);
@@ -681,7 +673,7 @@ article{
 .time-location {
     list-style: none;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 3vw;
     padding-left: 0;
@@ -689,10 +681,6 @@ article{
 
 .time-location li{
     font-size: 1rem;
-}
-
-.time-location li img{
-    width: 100%;
 }
 
 .discount-info .price{
@@ -708,16 +696,8 @@ article{
 
 
 /* -------A simple perfect place----- */
-.perfect-Place{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    /* justify-content: center; */
-}
+
 .watchPlace-container {
-    border: 1px solid blueviolet;
-    margin-top: 0;
-    margin-bottom: 0;
     width: 48%; 
     height: 140vh;
 
@@ -727,10 +707,8 @@ article{
 }
 
 .watchPlace-content{
-    /* border: 1px solid #FF5400; */
     width: 100%;
     height: auto;
-    /* padding: 0 10px; */
     padding-left: 20vw;
 }
 
@@ -806,33 +784,8 @@ hr{
 }
 
 /* --------------Footer------------- */
+/* not needed */
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-}
-
-.logo span{
-    color: #FF5400;
-}
-
-.contact-journeyer {
-    background: rgba(19, 19, 24, 0.05);
-    height: 40vh;
-    padding: 5vh 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-details{
-    width: 60vw;
-    text-align: center;
-}
 /*-----------------------------------------------
  -------------------------------------------------- */
 }
