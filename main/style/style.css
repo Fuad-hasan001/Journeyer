@@ -24,6 +24,10 @@ body {
     border-radius: 8px;
     font-size: 1rem;
 }
+
+p{
+    color: #5A5A5D;;
+}
 /* ---------header Section------ */
 header {
     background-color: #FFF;
@@ -340,7 +344,7 @@ article{
  
 /* ----------NewsLetter----------- */
 .newsletter-container {
-    /* margin: 10vh 0; */
+    margin: 10vh 0;
     height: 60vh;
 
     display: flex;
@@ -363,7 +367,6 @@ hr{
 .news-letter-content form{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 1vh;
 
@@ -391,11 +394,35 @@ hr{
 
 
 /* ---------Footer Section------ */
-footer {}
+footer {
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo span{
+    color: #FF5400;
+}
 
 .contact-journeyer {
-    background-color: gray;
-    height: 10vh;
+    background: rgba(19, 19, 24, 0.05);
+    height: 40vh;
+    padding: 5vh 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details{
+    width: 60vw;
+    text-align: center;
 }
 
 
@@ -776,6 +803,35 @@ hr{
 
 .newsLetter-sample-img img{
     width: 100%;
+}
+
+/* --------------Footer------------- */
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo span{
+    color: #FF5400;
+}
+
+.contact-journeyer {
+    background: rgba(19, 19, 24, 0.05);
+    height: 40vh;
+    padding: 5vh 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details{
+    width: 60vw;
+    text-align: center;
 }
 /*-----------------------------------------------
  -------------------------------------------------- */
