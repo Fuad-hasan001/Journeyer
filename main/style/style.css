@@ -1,0 +1,650 @@
+/* universal - Shared-design*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+.btn-primary{
+    background-color: #FF5400;
+    color: #FFF;
+    padding: 3vh 4vw;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+/* ---------header Section------ */
+header {
+    background-color: #FFF;
+}
+
+nav {
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.nav-logo-title span {
+    color: #FF5400;
+}
+
+.nav-info {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+}
+
+.nav-info li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-info .home {
+    color: #FF5400;
+    font-weight: bold;
+}
+
+
+/* ---------Banner Section--------- */
+.banner-container {
+    /* border: 1px solid green; */
+    height: 70vh;
+    background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 16px;
+    position: relative;
+}
+
+.banner-details {
+    height: 70vh;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    color: #FFF;
+}
+
+
+.info{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-details h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    padding-top: 10vh;
+}
+
+
+.schedule {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+
+    position: relative;
+    bottom: 50%;
+
+    
+}
+
+.schedule form {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.schedule input[type=text] {
+    width: 174px;
+    height: 52px;
+    border: 0;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.btn-find {
+    width: 174px;
+    height: 52px;
+    background-color: #FF5400;
+    color: #FFF;
+    border: 0;
+    border-radius: 8px;
+
+}
+
+/* ---------Main Section------ */
+main {
+    /* margin: 0 5vw; */
+    background-color: #FFF;
+}
+
+.popularTour-container {
+    margin-top: 10vh;
+    height: 70vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    padding: 0 5vw;
+
+}
+
+.tour-info{
+    width: 45vw;
+}
+
+.tour-info p, li{
+    font-size: 14px;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.tour-img{
+    width: 35vw;
+}
+
+.tour-img img{
+    width: 100%;
+}
+
+
+
+/* ---------------------------- */
+
+.destination-container {
+    height: auto;
+}
+
+.destination-content{
+    border: 1px solid red;
+    width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4vh 0;
+}
+
+.destination-content h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.thumbnail{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 3vh;
+}
+
+.first-theme-row,
+.third-theme-row
+{
+    grid-template-columns:  auto auto;
+}
+
+.second-theme-row{
+    grid-template-columns: auto auto auto;
+}
+
+/* ---------Why Choose us--------- */
+.chooseUs-container {
+    height: auto;
+    margin: 10vh 0;
+}
+
+.chooseUs-content,
+.discounts-content{
+    width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4vh 0;
+}
+
+.service-categories-row-1{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.worldClass-background{
+    background: rgba(41, 206, 246, 0.05)!important;
+}
+
+.service-category-row-2{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.category{
+    width: 40vw;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+
+
+
+
+
+
+/* ---------Footer Section------ */
+footer {}
+
+.contact-journeyer {
+    background-color: gray;
+    height: 10vh;
+}
+
+
+/* ---------------
+----------------
+-------Media Query---------- */
+
+/* Responsive Design for tablet */
+@media screen and (min-width: 601px) and (max-width:992px) {
+    body {
+        background-color: blue;
+    }
+
+
+
+}
+
+/* ----------Responsive Design for Mobile */
+@media screen and (max-width: 600px) {
+    body {
+        /* background-color: red; */
+    }
+
+    .banner{
+        /* margin: 0;
+        padding: 0; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-container {
+        width: 48%; 
+        height: 100vh;
+        margin: 0;
+    }
+
+    .banner-details{
+        width: 100%; 
+        height: auto;
+    }
+    .info{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .banner-details h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0;
+        padding-top: 4vh;
+
+    }
+
+    .banner-details p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    /* -------------------- */
+    .schedule {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    
+        position: relative;
+        bottom: -60px;
+    }
+    
+    .schedule form {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .schedule input[type=text] {
+        width: 60vw;
+        height: 8vh;
+        border: 0;
+        padding-left: 10px;
+        border-radius: 8px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .schedule input[type=text]:hover{
+        outline-color: #FF5400;
+    }
+    
+    .btn-find {
+        width: 60vw;
+        height: 8vh;
+        background-color: #FF5400;
+        color: #FFF;
+        border: 0;
+        border-radius: 8px;
+        font-size: 1rem;
+
+    
+    }
+
+    /* ----Our Popular Tours------ */
+.popularTour-container {
+    margin-top: 0;
+    width: 42%; 
+    height: auto;
+
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.tour-info{
+    width: 100%;
+}
+
+.tour-info h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.tour-info p, li{
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.tour-img{
+    width: 100%;
+}
+
+.tour-img img{
+    width: 100%;
+    height: auto;
+}
+
+/* ----Choose your destination-- */
+.destination-container {
+    height: auto;
+}
+
+.destination-content{
+    width: 48%;
+    margin: auto 0;
+    text-align:center;
+    padding: 0 1vw;
+}
+
+.destination-content h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.destination-content p{
+    font-size: 1.5rem;
+}
+
+.thumbnail{
+    display:block;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.first-theme-row,
+.third-theme-row img
+{
+    width: 48%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.second-theme-row img{
+    width: 48%;
+    height: auto;
+    margin-bottom: 16px;
+
+}
+
+/* ---------Why Choose us--------- */
+.chooseUs-container {
+    border: 1px solid goldenrod;
+    width: 48%;
+    height: auto;
+    margin: 10vh 0;
+}
+
+.chooseUs-content,
+.discounts-content{
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4vh 0;
+}
+
+
+.service-categories-row-1{
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.worldClass-background{
+    background: rgba(41, 206, 246, 0.05)!important;
+}
+
+.service-category-row-2{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.category{
+    width: 70%;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+/* ----------Deal and Discounts --------------*/
+.discounts-container {
+    width: 48%;
+    height: auto;
+}
+
+.discounts-package-info{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.discounts-package-info img{
+    width: 100%;
+    height: 100vh;
+}
+
+article{
+    position: relative;
+}
+
+.discount-info{
+    border: 1px solid red;
+    width: 70%;
+    height: auto; /*40vh*/
+
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 16px;
+
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+.discount-info-2{
+    right: 10%;
+}
+
+.time-location {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 3vw;
+    padding-left: 0;
+}
+
+.time-location li{
+    font-size: 1rem;
+}
+
+.time-location li img{
+    width: 100%;
+}
+
+.discount-info .price{
+    color: #FF5400;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+.discount-info h4{
+    margin-bottom: 0;
+}
+
+
+/* -------A simple perfect place----- */
+.perfect-Place{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: center; */
+}
+.watchPlace-container {
+    border: 1px solid blueviolet;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 48%; 
+    height: 140vh;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25vh;
+}
+
+.watchPlace-content{
+    /* border: 1px solid #FF5400; */
+    width: 100%;
+    height: auto;
+    /* padding: 0 10px; */
+    padding-left: 20vw;
+}
+
+.watchPlace-content p, li{
+    width: 80vw;
+    font-size: 1rem;
+}
+
+.watch-sample{
+    width: 90%;
+    height: 10vh;
+}
+
+.watch-sample video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* ----------NewsLetter----------- */
+.newsletter-container {
+    margin: 5vh 0;
+    height: auto;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.news-letter-content{
+    border: 1px solid #FF5400;
+    width: 42%;
+    padding: 40px;
+
+    border-radius: 8px;
+}
+
+hr{
+    margin: 3vh 0;
+}
+
+.news-letter-content form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1vh;
+
+}
+
+.news-letter-content form input{
+    width: 60vw;
+    padding: 16px 10px;
+
+    border: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    outline-color: #FF5400;
+}
+
+.news-letter-content form input[type=button]{
+    background-color: #FF5400;
+    color: #FFF;
+}
+
+.newsLetter-sample-img{
+    width: 48%;
+}
+
+.newsLetter-sample-img img{
+    width: 100%;
+}
+/*-----------------------------------------------
+ -------------------------------------------------- */
+}
+
