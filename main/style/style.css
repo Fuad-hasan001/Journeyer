@@ -25,9 +25,6 @@ body {
     font-size: 1rem;
 }
 
-p{
-    color: #5A5A5D;;
-}
 /* ---------header Section------ */
 header {
     background-color: #FFF;
@@ -35,11 +32,9 @@ header {
 
 nav {
     height: 10vh;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .nav-logo-title {
@@ -47,18 +42,18 @@ nav {
     align-items: center;
     gap: 0.5vw;
 }
-
 .nav-logo-title span {
     color: #FF5400;
 }
 
 .nav-info {
-    list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2vw;
 }
 
-.nav-info li a {
+.nav-info a {
     color: black;
     text-decoration: none;
     font-size: 18px;
@@ -69,6 +64,16 @@ nav {
     color: #FF5400;
     font-weight: bold;
 }
+
+.nav-options button{
+    display: none;
+    background-color: #FFF;
+    border: 0;
+}
+
+/* .nav-info button:hover{
+    cursor: pointer;
+} */
 
 
 /* ---------Banner Section--------- */
@@ -442,6 +447,53 @@ footer {
     
     }
 
+    nav {
+        width: 48%;
+        height: 8vh;
+    }
+
+    
+    
+    .nav-options button{
+        display: inline-block;
+        background-color: #FFF;
+        border: 0;
+    }
+    
+    .nav-options button:hover{
+        cursor: pointer;
+    }
+/* ------------------------------ */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 30px;
+    right: 15%;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content li:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+/* -------------------- */
+
+    /* --------Banner-section----------- */
     .banner{
         display: flex;
         flex-direction: column;
@@ -562,11 +614,14 @@ footer {
     padding: 0 1vw;
 }
 
-.destination-content h2{
+.destination-content,
+.chooseUs-content,
+.discounts-content h2{
     font-size: 2.5rem;
     margin-bottom: 0;
 }
-.destination-content p{
+.destination-content,.chooseUs-content,
+.discounts-content p{
     font-size: 1.5rem;
 }
 
@@ -588,24 +643,27 @@ footer {
     width: 48%;
     height: auto;
     margin-bottom: 16px;
-
 }
+
+
+
 
 /* ---------Why Choose us--------- */
 .chooseUs-container {
     width: 48%;
     height: auto;
-    margin: 10vh 0;
 }
 
 .chooseUs-content,
 .discounts-content{
-    width: 50vw;
+    width: 68%;
     margin: 0 auto;
     text-align: center;
-    padding: 4vh 0;
 }
 
+.chooseUs-content h2{
+    margin-top: 0;
+}
 
 .service-categories-row-1{
     flex-direction: column;
@@ -631,6 +689,8 @@ footer {
     background: rgba(251, 181, 99, 0.05);
 }
 
+
+
 /* ----------Deal and Discounts --------------*/
 .discounts-container {
     width: 48%;
@@ -653,6 +713,7 @@ article{
 }
 
 .discount-info{
+    border: 1px solid red;
     width: 70%;
     height: auto;
 
@@ -662,7 +723,7 @@ article{
     padding: 16px;
 
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     right: 10%;
 }
 
@@ -699,7 +760,7 @@ article{
 
 .watchPlace-container {
     width: 48%; 
-    height: 140vh;
+    height: auto;
 
     flex-direction: column;
     justify-content: flex-start;
@@ -731,7 +792,7 @@ article{
 
 /* ----------NewsLetter----------- */
 .newsletter-container {
-    margin: 5vh 0;
+   margin-top: 20vh;
     height: auto;
 
     flex-direction: column;
@@ -743,7 +804,6 @@ article{
     border: 1px solid #FF5400;
     width: 42%;
     padding: 40px;
-
     border-radius: 8px;
 }
 
