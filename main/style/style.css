@@ -463,7 +463,9 @@ footer {
     .nav-options button:hover{
         cursor: pointer;
     }
-/* ------------------------------ */
+
+
+/* -----------Hamburger Menu Btn------------- */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -713,7 +715,6 @@ article{
 }
 
 .discount-info{
-    border: 1px solid red;
     width: 70%;
     height: auto;
 
